@@ -6,9 +6,10 @@ jupyter serverextension enable --py jupyter_server_proxy
 jupyter lab clean
 jupyter labextension install @jupyterlab/server-proxy
 
-
-#export SERVICE_URL=https://open-vsx.org/vscode/gallery
-#export ITEM_URL=https://open-vsx.org/vscode/item
+printenv
+export SERVICE_URL=https://open-vsx.org/vscode/gallery
+export ITEM_URL=https://open-vsx.org/vscode/item
+printenv
 
 code-server --install-extension ms-python.python
 #code-server --install-extension gitduck.code-streaming
