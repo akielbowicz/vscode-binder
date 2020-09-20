@@ -7,11 +7,11 @@ jupyter labextension install @jupyterlab/server-proxy
 jupyter lab build
 
 
-export SERVICE_URL=https://open-vsx.org/vscode/gallery
-export ITEM_URL=https://open-vsx.org/vscode/item
+#export SERVICE_URL=https://open-vsx.org/vscode/gallery
+#export ITEM_URL=https://open-vsx.org/vscode/item
 
 code-server --install-extension ms-python.python
-code-server --install-extension gitduck.code-streaming
+#code-server --install-extension gitduck.code-streaming
 
 # Install the VS code proxy
 pip install -e.
