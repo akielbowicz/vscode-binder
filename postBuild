@@ -1,19 +1,16 @@
 #!/bin/bash
-set -ex
+#set -ex
 
 # Enable the proxy extension in notebook and lab
 jupyter serverextension enable --py jupyter_server_proxy
-jupyter lab clean
-jupyter labextension install @jupyterlab/server-proxy
+#jupyter labextension install @jupyterlab/server-proxy
+#jupyter lab build
 
-printenv
 export SERVICE_URL=https://open-vsx.org/vscode/gallery
 export ITEM_URL=https://open-vsx.org/vscode/item
-printenv
 
 code-server --install-extension ms-python.python
-#code-server --install-extension gitduck.code-streaming
+code-server --install-extension gitduck.code-streaming
 
 # Install the VS code proxy
 pip install -e.
-jupyter lab build
