@@ -1,4 +1,5 @@
-#!/bin/bash
+#!/bin/bash -l
+
 set -ex
 
 # Enable the proxy extension in notebook and lab
@@ -6,11 +7,8 @@ set -ex
 #jupyter labextension install @jupyterlab/server-proxy
 #jupyter lab build
 
-wget https://open-vsx.org/api/gitduck/code-streaming/0.1.26/file/gitduck.code-streaming-0.1.26.vsix
-wget https://open-vsx.org/api/ms-python/python/2020.8.105369/file/ms-python.python-2020.8.105369.vsix
-
-conda init bash
-conda activate notebook
+#wget https://open-vsx.org/api/gitduck/code-streaming/0.1.26/file/gitduck.code-streaming-0.1.26.vsix
+#wget https://open-vsx.org/api/ms-python/python/2020.8.105369/file/ms-python.python-2020.8.105369.vsix
 
 #export SERVICE_URL=https://open-vsx.org/vscode/gallery
 #export ITEM_URL=https://open-vsx.org/vscode/item
