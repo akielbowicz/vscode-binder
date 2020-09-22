@@ -12,9 +12,7 @@ set -ex
 
 export SERVICE_URL=https://open-vsx.org/vscode/gallery
 export ITEM_URL=https://open-vsx.org/vscode/item
-code-server --version
 
-code-server --install-extension ms-python.python-2020.8.105369.vsix
-code-server --install-extension gitduck.code-streaming-0.1.26.vsix
+code-server --install-extension ms-python.python
 code-server --install-extension gitduck.code-streaming
-#code-server --version
+code-server --install-extension vscodevim.vim
