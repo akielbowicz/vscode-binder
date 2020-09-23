@@ -3,9 +3,9 @@
 set -ex
 
 # Enable the proxy extension in notebook and lab
-#jupyter serverextension enable --py jupyter_server_proxy
-#jupyter labextension install @jupyterlab/server-proxy
-#jupyter lab build
+jupyter serverextension enable --py jupyter_server_proxy
+jupyter labextension install @jupyterlab/server-proxy
+jupyter lab build
 
 #wget https://open-vsx.org/api/gitduck/code-streaming/0.1.26/file/gitduck.code-streaming-0.1.26.vsix
 #wget https://open-vsx.org/api/ms-python/python/2020.8.105369/file/ms-python.python-2020.8.105369.vsix
